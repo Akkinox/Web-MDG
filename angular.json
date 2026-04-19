@@ -17,7 +17,8 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "baseHref": "/MDG-App/",
+            "outputPath": "docs",
+            "baseHref": "/Web-MDG/",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
