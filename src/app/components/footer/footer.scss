@@ -1,0 +1,59 @@
+.footer {
+  background: linear-gradient(135deg, #1a3a6b 0%, #2d5a9d 100%);
+  color: #ffffff;
+  padding: 3rem 2rem;
+  text-align: center;
+  display: block;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  h4 {
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 0.8rem;
+    display: block;
+    font-size: 0.95rem;
+  }
+
+  a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  a:hover {
+    color: #ffffff;
+    opacity: 1;
+  }
+
+  @media (max-width: 768px) {
+    padding: 2rem 1.5rem;
+
+    h4 {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 1.5rem 1rem;
+
+    h4 {
+      font-size: 0.9rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}
