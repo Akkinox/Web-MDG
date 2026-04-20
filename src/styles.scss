@@ -117,3 +117,28 @@ button {
     transform: translateX(0);
   }
 }
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+
+// Clases para el scroll reveal con Intersection Observer
+.fade-in-hidden {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.fade-in-visible {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.fade-out-hidden {
+  animation: fadeOut 0.8s ease-in forwards;
+}

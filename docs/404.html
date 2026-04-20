@@ -4,18 +4,11 @@
     <meta charset="utf-8">
     <title>Página no encontrada</title>
     <script type="text/javascript">
-      // Redirige todas las rutas no encontradas al index.html
-      // Esto permite que Angular maneje el enrutamiento del lado del cliente
-      var pathSegmentsToKeep = 1;
-
-      var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/')
-        .replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
+      // Redirige al inicio (/Web-MDG/) en lugar de preservar la ruta no encontrada
+      window.location.replace(
+        window.location.protocol + '//' + 
+        window.location.host + 
+        '/Web-MDG/'
       );
     </script>
   </head>

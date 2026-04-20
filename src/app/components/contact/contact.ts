@@ -2,10 +2,11 @@
 import { FormsModule } from '@angular/forms';
 import { EmailService } from '../../services/email';
 import { CommonModule } from '@angular/common';
+import { ObserveVisibilityDirective } from '../../directives/observe-visibility.directive';
 
 @Component({
   selector: 'app-contact',
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, ObserveVisibilityDirective],
   templateUrl: './contact.html',
   styleUrl: './contact.scss'
 })

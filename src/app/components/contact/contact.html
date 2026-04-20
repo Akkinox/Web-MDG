@@ -1,7 +1,7 @@
 ﻿<section class='contact'>
-  <h2>Contactanos</h2>
-  <p class='contact-subtitle'>Completa el formulario y nos pondremos en contacto.</p>
-  <div class='contact-wrapper'>
+  <h2 appObserveVisibility>Contactanos</h2>
+  <p class='contact-subtitle' appObserveVisibility>Completa el formulario y nos pondremos en contacto.</p>
+  <div class='contact-wrapper' appObserveVisibility>
     <form class='contact-form' (ngSubmit)="submitForm()">
       <!-- Mensaje de éxito -->
       <div *ngIf="successMessage" class='alert-success'>
