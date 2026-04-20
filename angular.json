@@ -17,8 +17,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "outputPath": "/docs",
-            "outputMode": "static",
+            "outputPath": "docs",
             "baseHref": "/Web-MDG/",
             "browser": "src/main.ts",
             "polyfills": [
